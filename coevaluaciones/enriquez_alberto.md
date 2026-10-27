@@ -46,3 +46,15 @@ El trabajo está bien organizado y presenta explicaciones claras sobre CMS y SSG
 | --- | --- | --- |
 | P1 | `cms.md`: apartado «Sus tipos y ejemplos» y sección de estadísticas de mercado. | Añadir un ranking de los cinco CMS más utilizados, con porcentajes de uso, fuente consultada y fecha de los datos. También sería conveniente diferenciar mejor los CMS según su finalidad y arquitectura. |
 | P2 | `ssg.md`: apartado «Qué es un SSG». | Añadir un esquema que muestre los pasos desde los archivos de contenido y las plantillas hasta la generación de las páginas HTML y su publicación. Esto complementaría la imagen actual y ayudaría a entender mejor el proceso. |
+
+## D. Respuesta y correcciones del propietario del proyecto
+
+**Cumplimenta:** Francisco Bustillos
+
+**Qué he aprendido al corregir mi trabajo:**
+Al aplicar las propuestas he comprobado que un contenido técnico se entiende mejor cuando se apoya en datos verificables y en esquemas visuales. Los porcentajes de uso con fuente y fecha hacen que la información sea contrastable, y separar los CMS por finalidad y por arquitectura evita mezclar criterios distintos. Además, un esquema del proceso de un SSG ayuda a entender el flujo completo mejor que solo una imagen aislada.
+
+| Propuesta | Respuesta y decisión razonada | Corrección aplicada y archivo | Commit |
+|---|---|---|---|
+| P1 | **Aceptada.** La propuesta mejora el apartado porque aporta datos contrastables y una clasificación más clara. | En `cms.md`, apartado «Sus tipos y ejemplos» y sección de estadísticas: añadido ranking de los cinco CMS más utilizados con porcentaje de uso, fuente ([fuente, p. ej. W3Techs]) y fecha de los datos ([mes y año]). Separada la clasificación por finalidad de la clasificación por arquitectura, con ejemplos en ambas. | [fbe42b4](https://github.com/francisco-bustillos/Practica-2/commit/fbe42b4f7c060819629f0030a765766e879e7112) |
+| P2 | **Aceptada.** El esquema complementa la imagen actual y explica el proceso completo. | En `ssg.md`, apartado «Qué es un SSG»: añadido un esquema del proceso (contenido y plantillas → generación de HTML → publicación), colocado debajo de la imagen existente, con una breve explicación de cada paso. | [b794c04](https://github.com/francisco-bustillos/Practica-2/commit/b794c040861c2e21ab90e6db949e5d61cf694d44) |
