@@ -3,6 +3,11 @@ Un SSG (Static Site Generator) es una herramienta que genera las páginas de una
 
 ![](SSG.png)
 
+### Flujo de trabajo de un generador de sitios estáticos
+| 1. Contenido y plantillas | | 2. Generador (build) | | 3. Páginas HTML estáticas | | 4. Publicación (hosting / CDN) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Markdown, layouts, CSS, imágenes y configuración | ➜ | Jekyll, Hugo o Astro | ➜ | HTML, CSS, JS e imágenes listos para servir | ➜ | GitHub Pages, Netlify, Vercel… |
+
 # Compara Jekyll, Hugo y Astro a partir de tu investigación.
 
 | **Aspecto a investigar** | **Jekyll** | **Hugo** | **Astro** |
