@@ -71,16 +71,41 @@ Para realizar la comparación entre Jekyll, Hugo y Astro, se llevó a cabo una i
 | **Inconvenientes** | - Necesita Ruby: la instalación puede dar problemas, sobre todo en Windows.<br> - Más lento que Hugo: en webs con muchas páginas, el build tarda bastante más.<br> - Plugins limitados en GitHub Pages: solo admite una lista reducida de plugins.| - Plantillas difíciles: las plantillas de Go tienen una sintaxis rara y una curva de aprendizaje mayor que Liquid (Jekyll) o los archivos .astro.<br> - Errores poco claros: cuando algo falla en una plantilla, los mensajes pueden ser difíciles de entender.<br> - Menos flexible para interactividad: no está pensado para integrar componentes de React o Vue como Astro.| - Ecosistema más joven: tiene menos temas, plugins y tutoriales que Jekyll, y su comunidad es más pequeña.<br> - Cambios frecuentes entre versiones: las actualizaciones pueden obligar a modificar el proyecto y a subir la versión mínima de Node.js.<br> - Más lento que Hugo en webs muy grandes: al estar hecho en JavaScript, el build tarda más con miles de páginas. |
 | **Posibilidad de publicarlo en GitHub Pages** | Sí, es totalmente posible. Es la combinación más natural, porque GitHub Pages admite Jekyll de forma nativa | Sí, es posible y gratuito, pero con una diferencia respecto a Jekyll: GitHub Pages solo construye Jekyll de forma nativa, así que con Hugo el build se hace con GitHub Actions. | Sí, es posible y muy habitual. Astro genera archivos estáticos, así que se puede publicar gratis en GitHub Pages.Sí, es posible y muy habitual. Astro genera archivos estáticos, así que se puede publicar gratis en GitHub Pages. |
 
+**Fuente:** W3Techs, [Usage statistics and market share of content management systems](https://w3techs.com/technologies/overview/content_management). Datos a 26 de octubre de 2026.
+
+## Los CMS más utilizados
+
+| Posición | CMS | % de todos los sitios web | % de cuota entre los sitios con CMS |
+| --- | --- | --- | --- |
+| 1 | **WordPress** | 39,6 % | 58,3 % |
+| 2 | **Shopify** | 5,3 % | 7,9 % |
+| 3 | **Wix** | 4,2 % | 6,2 % |
+| 4 | **Squarespace** | 2,4 % | 3,6 % |
+| 5 | **Joomla** | 1,1 % | 1,6 % |
+
+### Por finalidad
+
+| Finalidad | Descripción | Ejemplos |
+| --- | --- | --- |
+| **Páginas web generales** | Webs corporativas, portafolios o sitios informativos | WordPress, Joomla, Wix, Squarespace |
+| **Tiendas online** | Gestión de productos, precios, stock, pedidos y pagos | PrestaShop, Magento, Shopify |
+| **Blogs** | Publicación de entradas ordenadas por categorías, etiquetas o fechas | WordPress, Ghost, Blogger |
+| **Wikis y documentación** | Páginas editables y organizadas, para manuales o conocimiento interno | MediaWiki, DokuWiki, BookStack |
+| **Portales corporativos / empresariales** | Grandes volúmenes de contenido, usuarios y permisos | Drupal, TYPO3, Umbraco |
+
+### Por arquitectura
+
+| Arquitectura | Cómo funciona | Ejemplos |
+| --- | --- | --- |
+| **Tradicional (monolítico)** | La gestión del contenido y la presentación van juntas en la misma aplicación. El CMS genera las páginas con sus plantillas. | WordPress, Joomla, Drupal, PrestaShop |
+| **Desacoplado** | Back-end y front-end están separados, pero el CMS conserva su propia capa de presentación y además ofrece una API. | Drupal o WordPress usados con un front-end propio y una API |
+| **Headless** | No tiene capa de presentación. Solo almacena el contenido y lo entrega por API a cualquier aplicación (web, móvil, etc.). | Strapi, Directus, Contentful, Sanity |
+
 ## Videos de referencia
 
 Si quieres profundizar un poco más en el tema, aquí puedes ver un vídeo corto (menos de 5 minutos) que explica qué es un CMS y cómo funciona:
 
-
 [Qué es un CMS y para qué sirve (Explicado en 2 minutos)](https://www.youtube.com/watch?v=sSh5AAmItN0)
-
 ![](cms-info.jpg)
-
-
 Si quieres conocer más sobre los SSG (Static Site Generators) y cómo funcionan, puedes consultar la siguiente información: [enlace](ssg.md).
-
 
